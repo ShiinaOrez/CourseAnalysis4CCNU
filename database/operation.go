@@ -26,6 +26,6 @@ func SearchCoursesByKeyword(kw string) ([]Course, error) {
 
 func SearchClassesByKeyword(kw string) ([]Class, error) {
 	classes := &[]Class{}
-	db.Table("class").Where("MATCH (`name`, `course_code`, `teachers`) AGAINST ('" + kw + "') ").Find(*classes)
+	db.Table("class").Where("MATCH (`name`, `course_code`, `teachers`) AGAINST ('" + kw + "') ").Find(classes)
 	return *classes, nil
 }
