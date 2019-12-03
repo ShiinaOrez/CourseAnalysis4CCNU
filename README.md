@@ -2,25 +2,25 @@
 
 ------
 
-### 描述/Description
+### 描述/Description:
 
-**CourseAnalysis4CCNU** 是基于**网络爬虫**, **关系型数据库**, **全文分词索引**的对于学校课程, 课堂的**检索**系统. 使用Go语言进行撰写, 仅使用系统包, 没有任何第三方依赖.
+**CourseAnalysis4CCNU** 是基于**网络爬虫**, **关系型数据库**, **全文分词索引**的对于学校课程, 课堂的**检索**系统. 使用Go语言进行撰写, 使用系统包和["github.com/jinzhu/gorm"](https://github.com/jinzhu/gorm)包.
 
 ### 环境/Env
 
-#### 系统环境/Operating System Env
+#### 系统环境/Operating System Env:
 
 ```
 Linux Ubuntu 18.04 TLS
 ```
 
-#### 语言环境/Language Env
+#### 语言环境/Language Env:
 
 ```
 go version: 1.10+
 ```
 
-#### 环境变量/Env Variable
+#### 环境变量/Env Variable:
 
 ```
 COURSE_DB_USERNAME="YOUR DATABASE USERNAME"
@@ -29,7 +29,7 @@ COURSE_DB_HOST="YOUR DATABASE HOST"
 COURSE_DB_PASSWORD="YOUR DATABASE PASSWORD"
 ```
 
-### 运行/Run
+### 运行/Run:
 
 ```bash
 $: make
@@ -44,3 +44,7 @@ Options:
   -h	this help
   -s	serve apis at localhost
 ```
+
+### 注意事项:
+
+本仓库之代码完全开源, 但是需要注明作者和出处(CopyLeft: ShiinaOrez@github). 使用本仓库产生之一切后果完全自负.
