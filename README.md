@@ -4,7 +4,7 @@
 
 ### 描述/Description:
 
-**CourseAnalysis4CCNU** 是基于**网络爬虫**, **关系型数据库**, **全文分词索引**的对于学校课程, 课堂的**检索**系统. 使用Go语言进行撰写, 使用系统包和["github.com/jinzhu/gorm"](https://github.com/jinzhu/gorm)包.
+**CourseAnalysis4CCNU** 是基于**网络爬虫**, **关系型数据库**, **全文分词索引**的对于学校课程, 课堂的**检索**系统. 使用Go语言进行撰写.
 
 ### 环境/Env
 
@@ -17,7 +17,7 @@ Linux Ubuntu 18.04 TLS
 #### 语言环境/Language Env:
 
 ```
-go version: 1.10+
+go version: 1.11+
 ```
 
 #### 环境变量/Env Variable:
