@@ -7,6 +7,7 @@ USE `ccnu_course_db`;
 CREATE TABLE `class` (
   `id`           INT unsigned NOT NULL AUTO_INCREMENT,
   `name`         VARCHAR(40)  NOT NULL,
+  `academy`      VARCHAR(25)  NOT NULL,
   `course_code`  VARCHAR(8)   NOT NULL,
   `class_code`   VARCHAR(25)  NOT NULL,
   `cap`          VARCHAR(3)   NOT NULL,

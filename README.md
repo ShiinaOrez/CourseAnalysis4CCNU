@@ -35,7 +35,7 @@ COURSE_DB_PASSWORD="YOUR DATABASE PASSWORD"
 $: make
 $: ./analyst -h // 查看本应用help
 
-CCNU Course And Class Analyst version: 0.1.0
+CCNU Course And Class Analyst version: 0.2.0
 Usage: ./analyst [-a analysis] [-d database] [-h help] [-s serve]
 
 Options:
@@ -48,3 +48,10 @@ Options:
 ### 注意事项:
 
 本仓库之代码完全开源, 但是需要注明作者和出处(CopyLeft: ShiinaOrez@github). 使用本仓库产生之一切后果完全自负.
+
+### 历史版本:
+
++ 0.1.0
+	+ 最初版本, 具备关键字全文搜索功能
++ 0.2.0
+	+ 加入了四种筛选标签: 课程类型, 开课学院, 上课日, 上课地点

@@ -49,7 +49,7 @@ func main() {
 }
 
 func usage() {
-	fmt.Fprintf(os.Stderr, `CCNU Course And Class Analyst version: 0.1.0
+	fmt.Fprintf(os.Stderr, `CCNU Course And Class Analyst version: 0.2.0
 Usage: ./analyst [-a analysis] [-d database] [-h help] [-s serve]
 
 Options:

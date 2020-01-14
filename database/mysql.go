@@ -50,6 +50,7 @@ func InsertClassesByList() {
 			CourseCode:  class.CourseCode,
 			ClassCode:   class.ClassCode,
 			Name:        class.Name,
+			Academy:     class.Academy,
 			Cap:         class.Cap,
 			TeachingWay: class.TeachingWay,
 			Teachers:    teacherStr,

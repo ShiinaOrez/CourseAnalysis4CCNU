@@ -25,6 +25,7 @@ type Course struct {
 
 type Class struct {
 	Name        string
+	Academy     string
 	CourseCode  string
 	ClassCode   string
 	Cap         string
@@ -97,6 +98,7 @@ func analysisSheet(sheetIndex int) error {
 	// var gradeIndex, toIndex int
 	var (
 		nameIndex       = 0
+		academyIndex    = 0
 		courseCodeIndex = 0
 		classCodeIndex  = 0
 		creditIndex     = 0
@@ -122,6 +124,8 @@ func analysisSheet(sheetIndex int) error {
 				toIndex = i*/
 			case "课程名称":
 				nameIndex = i
+			case "开课学院":
+				academyIndex = i
 			case "课程编号":
 				courseCodeIndex = i
 			case "课堂号":
@@ -174,6 +178,7 @@ func analysisSheet(sheetIndex int) error {
 			}
 			newClass := Class{
 				Name:        rowNow.Cells[nameIndex].Value,
+				Academy:     rowNow.Cells[academyIndex].Value,
 				CourseCode:  rowNow.Cells[courseCodeIndex].Value,
 				ClassCode:   rowNow.Cells[classCodeIndex].Value,
 				Cap:         rowNow.Cells[capIndex].Value,
